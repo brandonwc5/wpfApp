@@ -1,0 +1,15 @@
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\MainWindow.g.cs
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\App.g.cs
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\WpfApp2_MarkupCompile.cache
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\WpfApp2_MarkupCompile.lref
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\bin\Release\WpfApp2.exe.config
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\bin\Release\WpfApp2.exe
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\bin\Release\WpfApp2.pdb
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\MainWindow.baml
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\WpfApp2.g.resources
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\WpfApp2.Properties.Resources.resources
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\WpfApp2.csproj.GenerateResource.cache
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\WpfApp2.csproj.CoreCompileInputs.cache
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\WpfApp2.exe
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\WpfApp2.pdb
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\WpfApp2.csprojAssemblyReference.cache

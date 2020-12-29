@@ -46,7 +46,6 @@ C:\Users\brand\Desktop\Deving\wpfApp\WpfApp2\wpfApp\WpfApp2\obj\Debug\WpfApp2.pd
 C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\bin\Debug\WpfApp2.exe.config
 C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\bin\Debug\WpfApp2.exe
 C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\bin\Debug\WpfApp2.pdb
-C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Debug\WpfApp2.csprojAssemblyReference.cache
 C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Debug\MainWindow.g.cs
 C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Debug\App.g.cs
 C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Debug\WpfApp2_MarkupCompile.cache

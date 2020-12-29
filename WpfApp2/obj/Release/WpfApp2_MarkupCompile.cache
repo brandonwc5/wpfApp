@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Debug\
+C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\obj\Release\
 WpfApp2
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\brand\Desktop\wpfApp\wpfApp\WpfApp2\App.xaml
 11151548125
 
-10-409300632
+6136355402
 131569487696
 MainWindow.xaml;
 

@@ -5,10 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="400">
+        Title="MainWindow" Height="800" Width="400"
+        Background="#dbd4d4">
+    <Window.Resources>
+        <Style TargetType="Button"
+               x:Key="LEDButtons">
+            <Setter Property="Background" Value="Linen"/>
+            <!--<Setter Property="FontSize" Value="20"/>-->
+        </Style>
+    </Window.Resources>
     <Border Padding="10">
         <StackPanel>
             <!-- Buttons -->
+            <Button x:Name="onButton" Content="On" HorizontalAlignment="Center" Margin="15,15,15,15" VerticalAlignment="Top" Width="80" Height="80" FontSize="30" FontWeight="Bold" Background="AliceBlue"  Click="OnButton_Click" Visibility="Visible"/>
+            <Button x:Name="offButton" Content="Off" HorizontalAlignment="Center" Margin="15,15,15,15" VerticalAlignment="Top" Width="80" Height="80" FontSize="30" FontWeight="Bold"  Click="OffButton_Click" Background="Red" Visibility="Collapsed"/>
+            <TextBlock x:Name="status" HorizontalAlignment="Center" Margin="23,23,0,0" TextWrapping="Wrap" Text="Disconnected" FontSize="25" Background="AliceBlue" VerticalAlignment="Top" Height="30" />
+            <TextBox Name="CommPortNumber" HorizontalAlignment="Left" Height="23" Margin="20,16,0,0" TextWrapping="Wrap" Text="COM5" VerticalAlignment="Top" Width="120"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="Connect" Grid.Column="0" Content="Connect" Style="{StaticResource LEDButtons}" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="155" Height="35" Click="Connect_Click"/>
+                <Button x:Name="Disconnect" Grid.Column="1" Content="Disconnect" Style="{StaticResource LEDButtons}" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="155" Height="35" Click="Disconnect_Click"/>
+
+            </Grid>
 
             <Grid >
                 <Grid.ColumnDefinitions>
@@ -16,16 +38,22 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                
-                <Button Margin="4" Grid.Column="0" Content="Apply" />
-                <Button Margin="4" Grid.Column="1" Content="Reset" />
+
+                <Button Name="Loop" Margin="4" Grid.Column="0" Content="Loop" Click="Loop_Click" Visibility="Visible"/>
+                <Button Name="StopLooping" Margin="4" Grid.Column="0" Content="Stop Looping" Click="StopLooping_Click" Visibility="Collapsed"/>
+
+                <Button Name="BlueButton" Margin="4" Grid.Column="1" Content="Blue LED" Click="Blue_Click" Visibility="Visible"/>
+                <Button Name="BlueButtonOff" Margin="4" Grid.Column="1" Content="Blue LED Off" Click="Blue_Click_Off" Visibility="Collapsed"/>
+
+
                 <Button Margin="4" Grid.Column="2" Content="Refresh" />
 
             </Grid>
+
             <TextBlock Text="Pulse Properties" FontWeight="Bold" Margin="0,10"/>
             <TextBlock Text="Description" />
             <TextBox Padding="2">
-                
+
             </TextBox>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -41,11 +69,51 @@
                     <TextBox IsEnabled="False" Background="#eeeeee" Padding="2" />
                 </StackPanel>
             </Grid>
+
             <TextBlock Text="Part Number" Margin="0,10"/>
             <TextBlock IsEnabled="False" Background="#eee" Padding="2"/>
-            <TextBlock Text="Raw Material" FontWeight="Bold" Margin="0,10"/>
-            <TextBlock Text="Mateial" Margin="0,10"/>
 
+            <TextBlock Text="Raw Material" FontWeight="Bold" Margin="0,10"/>
+            <TextBlock Text="Material" Margin="0,10"/>
+            <ComboBox Padding="2"/>
+
+            <TextBlock Text="Manufacturing Information" FontWeight="Bold" Margin="0,10"/>
+            <TextBlock Text="Work Centers" Margin="0,10,0,10"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Margin="0,0,10,0">
+                    <CheckBox Content="Weld"/>
+                    <CheckBox Content="Assembly"/>
+                    <CheckBox Content="Laser On"/>
+                    <CheckBox Content="Sinter"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Margin="0,0,10,10" >
+                    <CheckBox Content="Lathe"/>
+                    <CheckBox Content="Drill"/>
+                    <CheckBox Content="Fold"/>
+                    <CheckBox Content="Saw"/>
+                </StackPanel>
+            </Grid>
+
+            <TextBlock Text="Length" />
+            <TextBox Padding="2"/>
+
+            <TextBlock Text="Length" />
+            <TextBox Padding="2" IsEnabled="False"/>
+
+            <TextBlock Text="Finish" FontWeight="Bold" Margin="0,10"/>
+            <ComboBox SelectedIndex="0" Padding="2">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Finish}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
         </StackPanel>
     </Border>
 
